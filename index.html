@@ -305,7 +305,34 @@
             (max-width: 1440px) 960px,
             1920px"
 >
-
+  
+  <h2>Responsive pictures</h2>
+  <picture>
+  <source media="(min-width:600px)"
+          srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg">
+  <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg">  
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg"
+       width="480" height="360"
+       alt="black dog lying in the sun" >
+  </picture>
+  
+  <h2>Putting it all together</h2>
+  <picture>
+    <source media="(min-width:600px)"
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg" 320w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg" 480w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg" 720w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-960.jpg" 960w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1440.jpg" 1440w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1920.jpg" 1920w >
+    <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg" 320w,
+                   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-480.jpg" 480w,
+                   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-720.jpg" 720w,
+                   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-960.jpg" 960w >
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg"
+         alt="smiling black dog"
+         height="360px" width="480px">
+  </picture>
 
 
 
