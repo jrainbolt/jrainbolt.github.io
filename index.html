@@ -234,9 +234,77 @@
   <a href="/about/legal">Terms of Service</a>
 </footer>
 
+  <h2>Images</h2>
+  <ul>
+    <li>img src tells the browser where the image is.</li>
+    <li>alt is the text that will be read by an accessibility reader.</li>
+    <li>height and width tell the browser how tall and wide the image is.</li>
+  </ul>
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie.jpg" 
+     alt="shiny black dog looking pensive" width="400" height="300">
 
-
-
+  <h2>Image Formats</h2>
+  <p>There are four main image file types.</p>
+  <ul>
+    <li>GIF</li>
+    <li>SVG</li>
+    <li>JPG</li>
+    <li>PNG</li>
+  </ul>
+  <p>GIF</p>
+  <ul>
+    <li>Does well compressing large areas of a single color</li>
+    <li>Limited color space of 256 colors</li>
+    <li>Can do transparency, with jagged edges</li>
+    <li>Can have multiple frames, and make a little movie</li>
+  </ul>
+  <p>SVG (Scalabe Vector Graphic</p>
+  <ul>
+    <li>Logos, icons, etc.</li>
+    <li>Vector file</li>
+  </ul>
+<p>JPG</p>
+  <ul>
+    <li>Image format for compressing photos</li>
+    <li>Can be compressed</li>
+    <li>Size vs. Quality</li>
+  </ul>
+  <p>PNG</p>
+  <ul>
+    <li>Images that need transparency</li>
+    <li>Good at compression</li>
+    <li>Photos and images</li>
+    <li>Depends on the use case</li>
+  </ul>
+  <p>Responsive images</p>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie.jpg" 
+       alt="shiny black dog looking pensive" width="480" height="360">
+  
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie.jpg" 
+       alt="shiny black dog looking pensive" width="480" height="360"
+       srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg 2x,
+               https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 3x,
+               https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 4x,
+  >
+            
+               <h2>Responsive width</h2>
+               <p>Sizes Attribute</p>
+               <p>the <code>srcset</code> Attribute</p>
+               <p>Allows you to specify multiple files to be used based on either viewport width or image pixel width</p>
+<img class="half-width"
+     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg" 
+     alt="shiny black dog looking pensive" 
+     width="480" height="360"
+     srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg 480w,
+             https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg 960w,
+             https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 1440w,
+             https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 1920w,
+             
+     sizes="(max-width: 480px) 240px,
+            (max-width: 960px) 480px,
+            (max-width: 1440px) 960px,
+            1920px"
+>
 
 
 
