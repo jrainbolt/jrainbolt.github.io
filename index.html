@@ -440,10 +440,13 @@
   <p>Marks content that is off to the side or not the main attraction</p>
   <h2>HTML form basics</h2>
   <form action="success.html" method="get">
-    <label>Name</label>
-    <input name="name">
-    <label>Email</label>
-    <input name="email">
+    <label for="name">Name</label>
+    <input name="name" id="name">
+    <label for="email">Email</label>
+    <input name="email" id="email">
+    <br>
+    <label>Name <input name="name"></label>
+      <label>Email <input name="email"></label>
     <button>Sign up</button>
   </form>
   
