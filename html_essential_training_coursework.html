@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Page for James Rainbolt Aspiring Software Developer attending University of Illinois at Chicago, UIC.">
+  <link rel="stylesheet" href="styles.css">
+<title>HTML Essential Training Webpage</title>
+</head>
+<body>
+<p>I can write a paragraph here...
+  I am going to take notes here from <a href="https://www.linkedin.com/learning/html-essential-training-4/what-is-html?u=43607124">Linkedin</a>
+  <p>"&ltp&gt &lt/p&gt" denotes a paragraph element</p> 
+  <p>"&lth1&gt &lt/h1&gt" denotes a headline element</p>
+  <p>"&ltarticle&gt &lt/article&gt" denotes an article element</p>
+  <p>"&lti&gt &lt/i&gt" denotes <i>italic</i> element</p>
+  <p>"&ltb&gt &lt/b&gt" denotes <b>bold</b> element</p>
+  <p>"&ltstrong&gt &lt/strong&gt" denotes a <strong>strong</strong> element</p>
+  <p><em>This text is emphasized for effect</em></p>
+  <p>A Document Object Model (DOM) Tree is the hiearchy and structure of HTML elements, often used for targeting elements in CSS and JavaScript</p>
+  <p>The browser then uses the DOM tree to create an accessibility tree..more on this later.</p>
+  
+  
+  <article>
+    <h1>This is a headline.</h1>
+    <p>This is the first paragraph</p>
+    <p>This is the second paragraph</p>
+    <p>This is the third paragraph, that is <em>emphasized</em> for effect</p>
+  </article>
+    
+    <article>
+    <h1> Types of Lists</h1>
+      <p> Unordered Lists</p>
+      <p>Ordered Lists </p>
+      <p>Definition Lists</p>
+    </article>
+    <h2>Unordered List</h2>
+    <ul>
+      <li>pencils</li>
+      <li>paint</li>
+      <li>string</li>
+      <li>painters plastic</li>
+      <li>masking tape</li>
+      <li>canvas</li>
+      <li>paint spreader</li>
+    </ul>
+    
+    <h2>Ordered Lists</h2>
+    <ol>
+      <li>pencils</li>
+      <li>paint</li>
+      <li>string</li>
+      <li>painters plastic</li>
+      <li>masking tape</li>
+      <li>canvas</li>
+      <li>paint spreader</li>
+    </ol>
+    <h2>Definition Lists</h2>
+    <p> use dt and /dt to define a "Definition Term", similiar to a key-value pair in computer science</p>
+    <p> use dd and /dd to define a "Definition Description" </p>
+    <p> then wrap the entire thing in a &ltdl&gt and &lt/dl&gt</p>
+    
+    <p>use &ltq&gt and &lt/q&gt to denote <q>quotes</q></p>
+      <h2>Inline Elements</h2>
+      <ul>
+        <li>&ltq&gt</li>
+          <li>&ltstrong&gt</li>
+            <li>&ltb&gt</li>
+              <li>&lti&gt</li>
+                <li>&ltem&gt</li>
+      </ul>
+      
+      <h2>Block-Level Elements</h2>
+      <ul>
+        <li>&ltblockquote&gt</li>
+          <li>&ltp&gt</li>
+            <li>&ltul&gt</li>
+              <li>&lti&gt</li>
+                <li>&ltem&gt</li>
+      </ul>
+      
+      <h2>Dates and Times</h2>
+      <ul>
+        <li> <%elementname attributename="" > </li>
+        <li> <time datetime="2025-05-08">May 8, 2025</time></li>
+        <li>  Machine readable format of a date time is DATE: YYYY-MM-DD </li>
+        <li> <time datetime="14:15:28.5"> 14:15:28.5</time> </li>
+        <li> Machine readable format of a time is TIME: hh-mm-ss.ddd </li>
+        <li> <time datetime="15:45-5:00"> 3:45pm in New York</time> </li>
+        <li> Machine readable formate of timezone is TIME: hh-mm-ss.ddd+-hh:mm </li>
+      </ul>
+      
+      <p></p>
+      <h2>Code, pre, and br</h2>
+      <p>
+        we can write &ltcode&gt&lt/code&gt <code> {color:green} </code> in our CSS, and it will apply to anything marked up as an H4 element.
+      </p>
+        <h2>Entities</h2>
+        <ul>
+          <li> type ampersandlt for the less than sign</li>
+          <li> type ampersandgt for the greater than sign </li>
+          <li> &ltbr&gt &lt/br&gt denotes a line break</li>
+        </ul>
+        
+        <h1>[in Just-]</h1>
+        <p>by e.e. cummings</p>
+        <pre>
+        it's
+        spring
+        and
+                    the
+                                goat-footed
+        
+        baloonMan                whistles
+        far
+        and
+        wee
+        </pre>
+    
+        <p>H<sub>2</sub>O</p>
+        
+        <p>Something that has a footnote.<sup>2</sup></p>
+        
+        <p><small>© 2019 Fancy Company</small></p>
+        
+        <p>Check Debugger for source HTML code</p>
+        
+  <h2>Global Attributes</h2>
+        <p>Attributes that can be applied to any HTML element</p>
+        <h2> the <code>class</code> attribute</h2>
+        <p> Allows us to target <b>all elements with that class</b> in our CSS or JavaScript</p>
+        <p><pre> &ltp class="intro"&gt
+               This is the introduction.
+        </pre></p>
+<h1 class="page-title">Art</h1>
+
+<section id="toc">
+  <h3 class="toc-title">Table of Contents</h3>
+  <ol>
+    <li><a href="#painting">Painting</a></li>
+    <li><a href="#drawing">Drawing</a></li>
+    <li><a href="#mosaics">Mosaics</a></li>
+    <li><a href="#printmaking">Printmaking</a></li>
+  </ol>
+  
+  <blockquote contenteditable="true">
+    Edit this content to add your own quote.
+  </blockquote>
+  <cite contenteditable="true">Your name here</cite>
+
+<h2>The <code>id</code> Attribute</h2>
+<p>Allows us to target <b>a unique element with that id</b> in our CSS of Javascript</p>
+<p><pre>&lt class="intro" id="article-info"&gt
+    This is the introduction
+</pre></p>
+
+<h2>lang and dir Attributes</h2>
+
+<p lang="en-GB">This paragraph is in British English.</p>
+<p lang="en">This paragraph is in English.</p>
+<p lang="fr">This paragraph is in French.</p>
+<p lang="de">This paragraph is in German.</p>
+<p lang="he">This paragraph is in Hebrew.</p>
+<p lang=pl">This paragraph is in Polish.</p>
+<p lang=sr">This paragraph is in Serbian.</p>
+
+<p dir="ltr">This paragraph is in English. it flows from left to right.</p>
+<p dir="rtl">This paragraph is in English. it flows from right to left.</p>
+
+<h2>ARIA Roles</h2>
+<p>HTML attributes that provide accessible information about that specific element</p>
+
+<h2>Formatting HTML</h2>
+<ul>
+  <li>&ltpre&gt</li>
+  <li>&ltcode&gt</li>
+  <li>&lttextarea&gt</li>
+</ul>
+<p> other that those listed above, the browser will ignore everything that is greater than a single space.</p>
+<h2>Comments</h2>
+<p>&lt!-- this is the comment syntax--&gt</p>
+<!--This comment will not appear on the screen-->
+
+<hr>
+<!-- newer HTML elements -->
+<article>
+  <video controls>
+    <source src="">
+    <source src="">
+  </video>
+</article>
+<p>Newer HTML elements use whole words</p>
+<p>This is a canvas</p>
+<canvas></canvas>
+<p>testing img import</p>
+<img src="test.png"/>
+
+<h2>More entities</h2>
+<ul>
+  <li>&copy</li>
+  <li>&trade</li>
+  <li>&star</li>
+</ul>
+<h2>Links</h2>
+<p>Absolute URLs<p>
+<a href="https://example.com">This is a link.</a>
+<p>this is a sentence <a href="https://example.com">with a link</a> in the midst of the text.</p>
+<p><a href="https://example.com"><img src="https://tinyurl.com/y3ycfl3e"></a></p>
+<p>Relative URLs</p>
+<p>pages that are on the same domain</p>
+<p>index.html is a special HTML filename</p>
+<h2>Navigation</h2>
+<p>nav is an element that tells the site which links are for navigating</p>
+<nav role="navigation" aria-label="main menu">
+<ul class="navbar">
+  <li><a href="/">Home</a></li>
+  <li><a href="/people">People</a></li>
+  <li><a href="/prices">Prices</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+</nav>
+
+<nav aria-label="Breadcrumb">
+<ol class="breadcrumbs">
+  <li><a href="/">Home</a></li>
+  <li><a href="/people">Blog</a></li>
+  <li><a href="/prices">Prices</a></li>
+  <li><a href="/contact">March</a></li>
+  <li>March 9th Update</li>
+</ol>
+</nav>
+
+
+<footer>
+  <a href="/about/privacy">Privacy Policy</a>
+  <a href="/about/legal">Terms of Service</a>
+</footer>
+
+  <h2>Images</h2>
+  <ul>
+    <li>img src tells the browser where the image is.</li>
+    <li>alt is the text that will be read by an accessibility reader.</li>
+    <li>height and width tell the browser how tall and wide the image is.</li>
+  </ul>
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie.jpg" 
+     alt="shiny black dog looking pensive" width="400" height="300">
+
+  <h2>Image Formats</h2>
+  <p>There are four main image file types.</p>
+  <ul>
+    <li>GIF</li>
+    <li>SVG</li>
+    <li>JPG</li>
+    <li>PNG</li>
+  </ul>
+  <p>GIF</p>
+  <ul>
+    <li>Does well compressing large areas of a single color</li>
+    <li>Limited color space of 256 colors</li>
+    <li>Can do transparency, with jagged edges</li>
+    <li>Can have multiple frames, and make a little movie</li>
+  </ul>
+  <p>SVG (Scalabe Vector Graphic</p>
+  <ul>
+    <li>Logos, icons, etc.</li>
+    <li>Vector file</li>
+  </ul>
+<p>JPG</p>
+  <ul>
+    <li>Image format for compressing photos</li>
+    <li>Can be compressed</li>
+    <li>Size vs. Quality</li>
+  </ul>
+  <p>PNG</p>
+  <ul>
+    <li>Images that need transparency</li>
+    <li>Good at compression</li>
+    <li>Photos and images</li>
+    <li>Depends on the use case</li>
+  </ul>
+  <p>Responsive images</p>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie.jpg" 
+       alt="shiny black dog looking pensive" width="480" height="360">
+  
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie.jpg" 
+       alt="shiny black dog looking pensive" width="480" height="360"
+       srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg 2x,
+               https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 3x,
+               https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 4x,
+  >
+            
+               <h2>Responsive width</h2>
+               <p>Sizes Attribute</p>
+               <p>the <code>srcset</code> Attribute</p>
+               <p>Allows you to specify multiple files to be used based on either viewport width or image pixel width</p>
+<img class="half-width"
+     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg" 
+     alt="shiny black dog looking pensive" 
+     width="480" height="360"
+     srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg 480w,
+             https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg 960w,
+             https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 1440w,
+             https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 1920w,
+             
+     sizes="(max-width: 480px) 240px,
+            (max-width: 960px) 480px,
+            (max-width: 1440px) 960px,
+            1920px"
+>
+  
+  <h2>Responsive pictures</h2>
+  <picture>
+  <source media="(min-width:600px)"
+          srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg">
+  <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg">  
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg"
+       width="480" height="360"
+       alt="black dog lying in the sun" >
+  </picture>
+  
+  <h2>Putting it all together</h2>
+  <picture>
+    <source media="(min-width:600px)"
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg" 320w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg" 480w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg" 720w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-960.jpg" 960w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1440.jpg" 1440w,
+            srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1920.jpg" 1920w >
+    <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg" 320w,
+                   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-480.jpg" 480w,
+                   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-720.jpg" 720w,
+                   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-960.jpg" 960w >
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg"
+         alt="smiling black dog"
+         height="360px" width="480px">
+  </picture>
+
+  <h2>Figure and figcaption</h2>
+  <ul>
+    <li>&ltfigure&gt</li>
+    <p>For anything that appears as afigure, illustrating something</p>
+    <li>&ltfigcaption&gt</li>
+    <p>For demonstration of a concept which needs a caption</p>
+  </ul>
+  
+  <figure>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie2.png" 
+       alt="shiny black dog in the sun" width="960" height="720">
+  
+  <figcaption>Maggie the doy enjoysresting in a field, after a long day of chasing squirrels.
+  </figcaption>
+  </figure>
+  
+  <h2>Audio</h2>
+  <p>&ltaudio&gt</p>
+  <p>Element used to place audio</p>
+  
+  <audio controls loop autoplay>
+         <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/birds.mp3"></audio>
+  <h2>Video</h2>
+  <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.480p.h264.mp4" controls>
+  <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.vtt"
+         kind="captions"
+         label="english"
+         srclang="en"
+         default>
+    <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.vtt"
+         kind="subtitles"
+         label="Espanol"
+         srclang="es">
+    <p>This would be a video of a moonwalk, if your device supported playing this video.</p>
+  </video>
+  
+  <h2>Embedding</h2>
+  <p>Placing content from one site into the body of a page on a another site</p>
+  
+ <iframe width="560" height="315" 
+         src="https://www.youtube.com/embed/5qap5aO4i9A" 
+         frameborder="0" 
+         allow="accelerometer; 
+                autoplay; 
+                encrypted-media; 
+                gyroscope; 
+                picture-in-picture" 
+         allowfullscreen>
+  </iframe>
+  
+  <h2>Generic elements: div and span</h2>
+  <p>&ltdiv&gt</p>
+  <p>Block-level element</p>
+  <p>&ltspan&gt</p>
+  <p>Inline element</p>
+  
+  <h2>Putting it all together</h2>
+  <p>HTML file</p>
+  <p>The first file that's returned in response to a request for a webpage</p>
+  <p>The <code>doctype</code> Declaration<p>
+  <p> Declares which era this HTML file is from</p>
+  <p>The <code>head</code> Element</p>
+  <p>Contains information the browser needs to know, though it won't be displayed on the page</p>
+  <p>The <code>body</code> Element</p>
+  <p>Contains the information and content that will be displayed on the page</p>
+  <h2>Document head</h2>
+  <p>The <code>meta</code> Element</p>
+  <ul>
+    <li>Only used inside the head</li>
+    <li>Conveys metadata about the page</li>
+  </ul>
+  <p>The <code>link</code> Element</p>
+  <p>Links to a range of other assets we want to load</p>
+  <p>The <code>rel</code> Element</p>
+  <p> Tells the browser which kind of asset it is<p>
+  <p>The <code>href</code> Element</p>
+  <p>Provides the URL to the asset<p>
+  <p>The <code>script</code> Element</p>
+  <p>Tells the broswer to load a JavaScript file<p>
+  
+  <h2>Structuring content</h2>
+  <ul>
+    <li><code>main</code></li>
+    <li><code>header</code></li>
+    <li><code>footer</code></li>
+    <li><code>article</code></li>
+    <li><code>section</code></li>
+    <li><code>aside</code></li>
+  </ul>
+  <p><code>main</code></p>
+  <p>Wraps around the main content of the page</p>
+  <p><code>header</code> and <code>footer</code></p>
+  <p>Used to mark places on the page where the content is a header or a footer</p>
+  <p><code>main</code></p>
+  <p>Wraps around the main content of the page</p>
+  <p><code>article</code></p>
+  <p>Wrapped around any instance of an article</p>
+  <p><code>section</code></p>
+  <p>Wraps around sections of content</p>
+  <p><code>aside</code></p>
+  <p>Marks content that is off to the side or not the main attraction</p>
+  <h2>HTML form basics</h2>
+  <form action="success.html" method="get">
+    <label for="name">Name</label>
+    <input name="name" id="name" type="text">
+    <label for="email">Email</label>
+    <input name="email" id="email" 
+           type="email" required
+           placeholder="me@example.com">
+    <br>
+    <label>Name <input name="name"></label>
+      <label>Email <input name="email"></label>
+    <button type="submit">Sign up</button>
+  </form>
+  
+  <h1>Our Form</h1>
+  <form action="received.html" method="get">
+    
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text">
+    
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email"
+           placeholder="you@example.com">
+    
+    <label for="password"Password</label>
+    <input id="password" name="password" 
+           type="password">
+    
+    <label for="search">Search</label>
+    <input id="search" name="search" type="search"
+           placeholder="&#128269;">
+    
+    <label for="phone">Phone Number</label>
+    <input id="phone" name="phone" type="tel">
+    
+    <label for="textarea" Text Area</label>
+    <textarea id="textarea" name="textarea"
+              cols="30" rows="15"></textarea>
+    
+    <label for="date">Date</label>
+    <input id="date" name="date" type="date">
+    
+    <label for="color">Color</label>
+    <input id="color" name="color" type="color">
+    
+    <label for="file">File</label>
+    <input id="file" name="file" type="file"
+           accept="image/*" multiple>
+    
+    <label for="checkbox">Checkbox</label>
+    <input id="checkbox" name="simplecheckbox"
+           value="The checkbox is checked"
+           type="checkbox" checked>
+    
+    <label for="selectlist">Choose one</label>
+    <select id="selectlist" name="selectlist">
+      <option>First Option</option>
+      <option>Second Choice</option>
+      <option>Third Thing</option>
+    </select>
+    
+    <fieldset>
+      <legend>Checkboxes in a fieldset</legend>
+      <input id="thischeck" name="checkboxlist"
+             type="checkbox" value="This" checked>
+      <label for="thischeck">This</label>
+      <input id="orcheck" name="checkboxlist"
+             type="checkbox" value="And Or">
+      <label for="orcheck">And/Or</label>
+      <input id="thatcheck" name="checkboxlist"
+             type="checkbox" value="That">
+    </fieldset>
+    
+    <fieldset>
+      <legend>Radio buttons in a fieldset</legend>
+      <input id="thisradio" name="radiobutton"
+             type="radio" value="This" checked>
+      <label for="thisradio">This</label>
+      <input id=orradio" name="radiobutton"
+             type="radio" value"Or">  
+                                   </fieldset>
+                                   
+                                           
+      
+    
+    <button type="submit">SEND</button>
+  </form>
+  
+  <h2>When to use tables</h2>
+                         <p> Does using a table make it more clear what the content means?</p>
+   <table class="styled">
+    <tr>
+                        <th>Bird</th>
+                        <th>Color</th>
+                        <th>Diet</th>
+                        <th>Photo</th>
+                        </tr>
+                        <tr>
+                         <td>American Goldfinch</td>
+                         <td>yellow</td>
+                         <td>Mostly seeds.</td>
+                        <td><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/american-goldfinch.jpg"
+                             alt="american-goldfinch" width="360" height="261"></td>                                                                                 
+                         </tr>
+                         <tr>
+                         <td>Bluejay</td>
+                         <td>blue</td>
+                         <td>Omnivorous.</td>
+                         <td><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/blue-jay.jpg"
+                             alt="bluejay" width="360" height="261"></td>
+                         </tr>
+                         <tr>
+                         <td>Indigo Bunting</td>
+                         <td>blue</td>
+                         <td>Mostly seeds and insects.</td>
+                         <td><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/indigo-bunting.jpg"
+                             alt="indigo bunting" width="360" height="261"></td>
+                         </tr>
+                         <tr>
+                         <td>Northern Cardinal</td>
+                         <td>red</td>
+                         <td>Seeds, insects, berries.</td>
+                         <td><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/northern-cardinal.jpg"
+                             alt="northern cardinal" width="360" height="261"></td>
+                         </tr>
+                         <tr>
+                         <td>Tufted Titmouse</td>
+                         <td>grey</td>
+                         <td>Mostly insects.</td>
+                         <td><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/tufted-titmouse.jpg"
+                             alt="tufted titmouse" width="360" height="261"></td>
+                         </tr>
+                         </table>
+                                                                           
+                                                                           <h2>How to keep learning</h2>
+                                                                           <ul>
+                                                                           <li>MDN web docs</li>
+                                                                           <li>web content guidelines</li>
+                                                                           <li>CSS</li>
+                                                                           </ul>
+  
+</body>
+</html>
